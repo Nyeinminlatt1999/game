@@ -25,16 +25,16 @@ x =screen_width-w
 player_img = pg .image.load('resources/img/player.png')
 player_width=player_img.get_width()
 player_height=player_img.get_height()
-player_x=screen_width/2.player_width/2
-player_y=screen_height_player_height
+player_x=screen_width/2 - player_width/2
+player_y=screen_height - player_height
 player_velocity=1
 player_dx=0
 
 #pyla
 bullet_img = pg .image.load('resources/img/bullet.png')
-player_width=player_img.get_width()
-player_height=player_img.get_height()
-player_x=screen_width/2.player_width/2
+bullet_width = bullet_img.get_width()
+bullet_height = bullet_img.get_height()
+bullet_x=screen_width/2.player_width/2
 player_y=screen_height_player_height
 player_velocity=1
 player_dx=0
